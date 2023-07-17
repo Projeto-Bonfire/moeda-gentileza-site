@@ -1,0 +1,167 @@
+:root {
+    --backgroundColor: #FFFFFF;
+    --backgroundItemColor: #D9D9D9;
+    --transparent: transparent;
+    --textItemColor: #000000;
+    --shadowItemColor: rgb(100, 100, 100);
+}
+
+.blog-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.carousel-field {
+    width: 85vw;
+    display: flex;
+    align-items: center;
+}
+
+.next:nth-child(1) {
+    transform: rotate(180deg);
+}
+
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.slot {
+    width: 300px;
+    margin: 0 10px;
+    padding: 20px 20px;
+    flex: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px var(--shadowItemColor);
+    background-color: var(--backgroundItemColor);
+}
+
+.carousel-field .next
+.slot:nth-child(1), .slot:nth-child(6) {
+    height: 440px;
+}
+
+.slot:nth-child(2), .slot:nth-child(5) {
+    height: 470px;
+}
+
+.slot:nth-child(3), .slot:nth-child(4) {
+    height: 500px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.info span {
+    padding: 5px;
+    font-size: 12px;
+}
+
+.image {
+    background-color: var(--backgroundColor);
+    height: 170px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    background-color: var(--transparent);
+}
+
+button:hover {
+    opacity: .7;
+}
+
+@media (max-width: 576px) {
+h3, span p{
+    display: none;
+}
+    .next, .next2{
+        display: none;
+    }
+
+    .carousel-field {
+        width: 100vw; /* Full width for small screens */
+        overflow-x: scroll; /* Allow horizontal scrolling on small screens */
+    }
+
+    .carousel {
+        flex-wrap: nowrap; /* Ensure the carousel items do not wrap on small screens */
+    }
+
+    .slot {
+        width: 80%; /* Adjust the width to fit the screen */
+        margin: 0 5px; /* Reduce margin for better spacing */
+    }
+
+    .slot:nth-child(1),
+    .slot:nth-child(6) {
+        height: 300px; /* Adjust the heights for small screens */
+    }
+
+    .slot:nth-child(2),
+    .slot:nth-child(5) {
+        height: 350px; /* Adjust the heights for small screens */
+    }
+
+    .slot:nth-child(3),
+    .slot:nth-child(4) {
+        height: 400px; /* Adjust the heights for small screens */
+    }
+
+   
+}
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 900px) {
+    .container-blog{
+        height: 50vh;
+    }
+
+    .carousel-field {
+        width: 79vw; /* Adjust the width for medium screens */
+    }
+
+ .slot {
+        width: 40%; /* Adjust the width for medium screens */
+        margin: 0 5px; /* Reduce margin for better spacing */
+    }
+
+    /* Adjust the heights based on your design requirements for medium screens */
+    .slot:nth-child(1),
+    .slot:nth-child(6){
+        height: 250px;
+    }
+
+    .slot:nth-child(3),
+    .slot:nth-child(4) {
+        height: 350px;
+    }
+
+    .slot:nth-child(2),
+    .slot:nth-child(5) {
+        height: 300px;
+    }
+ h3, span p, .next, .next2{
+    display: none;
+ }
+}
