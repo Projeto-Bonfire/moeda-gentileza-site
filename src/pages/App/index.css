@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    flex-direction: column;
+    overflow-x: hidden;
+    text-align: center;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+:root{
+    --text: #262626;
+    --container-primary:#FFFFFF;
+    --secondary-container: #CCFFE1;
+    --tertiary-container: #FFE0F1;
+    --quaternary-container: #DDCDFF;
+    --last-container: #EFEEEE
+}
+
+header{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+.logo{
+    padding: 10px 50px 0px 50px;
+    width: 18rem;
+
+}
+
+nav{
+    justify-content: flex-end;
+    padding: 40px 50px;
+    display: flex;
+    position: row;
+    width: 100%;
+}
+
+nav a{
+    letter-spacing: 0.13em;
+    text-decoration: none;
+    color: var(--text);
+    padding-right: 5%;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.line{
+    background-color: #262626;
+    height: 0.5px;
+    opacity: 0.5;
+    width: 100%;
+}
+
+
+
+.information-container{
+    position: row;
+    display: flex;
+    height: 70vh;
+    width: 100%;
+}
+
+.image{
+    height: 70vh;
+    width: 50%;
+}
+
+.project-information{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left:20px;
+    display: flex;
+    height: 70vh;
+    width: 60%;
+}
+
+.project-information>h1{
+   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+   font-size: 2.5rem;
+   width: 100%;
+}
+
+.project-information>p{
+    justify-content: center;
+    word-wrap: break-word;
+    text-align: justify;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width:65%;
+}
+
+
+.img{
+    height: 65vh;
+    width: 100%;
+}
