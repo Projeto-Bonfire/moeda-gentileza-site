@@ -14,11 +14,11 @@
     background-color: var(--backgroundColor);
 }
 
-.container h1 {
+h1 {
     text-transform: uppercase;
 }
 
-.container ul {
+ul {
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -48,12 +48,12 @@
     background-color: var(--backgroundItemColor);
 }
 
-.dropdown .dropdown-btn span img {
+span img {
     width: 10px;
     transform: rotate(90deg);
 }
 
-.dropdown .dropdown-content {
+.dropdown-content {
     width: 95%;
     padding: 10px;
     position: absolute;
@@ -66,19 +66,19 @@
     border-radius: 0 0 10px 10px;
 }
 
-.dropdown .dropdown-content .dropdown-item {
+.dropdown-item {
     padding: 10px;
     cursor: pointer;
     transition: all .2s;
     
 }
 
-.dropdown .dropdown-content .dropdown-item:hover {
+.dropdown-item:hover {
     background-color: var(--itemHover);
 
 }
 
-.container .footer {
+.footer {
     height: 100px;
     width: 100%;
     margin-top: 5vh;
@@ -89,7 +89,7 @@
     
 }
 
-.container .footer p {
+.footer p {
     z-index: 2;
     color: #FFFFFF;
     
@@ -99,7 +99,7 @@
     width: 150px;
 }
 
-.container .footer .footer-animate:nth-child(1) {
+.footer-animate:nth-child(1) {
     height: 200px;
     width: 100%;
     position: absolute;
@@ -108,7 +108,7 @@
     animation: footer 8s ease-in-out infinite;
 }
 
-.container .footer .footer-animate:nth-child(2) {
+.footer-animate:nth-child(2) {
     height: 200px;
     width: 100%;
     position: absolute;
