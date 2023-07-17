@@ -14,32 +14,32 @@
     background-color: var(--backgroundColor);
 }
 
-.container .blog-title {
+.blog-title {
     text-align: center;
     text-transform: uppercase;
 }
 
-.container .carousel-field {
+.carousel-field {
     width: 85vw;
     display: flex;
     align-items: center;
 }
 
-.container .carousel-field .next:nth-child(1) {
+.next:nth-child(1) {
     transform: rotate(180deg);
 }
 
-.container .carousel-field .carousel {
+.carousel {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
 }
 
-.container .carousel-field .carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
     display: none;
 }
 
-.container .carousel-field .carousel .slot {
+.slot {
     width: 300px;
     margin: 0 10px;
     padding: 20px 20px;
@@ -49,31 +49,31 @@
     background-color: var(--backgroundItemColor);
 }
 
-.container .carousel-field .carousel .slot:nth-child(1) {
+.slot:nth-child(1) {
     height: 440px;
 }
 
-.container .carousel-field .carousel .slot:nth-child(2) {
+.slot:nth-child(2) {
     height: 470px;
 }
 
-.container .carousel-field .carousel .slot:nth-child(3) {
+.slot:nth-child(3) {
     height: 500px;
 }
 
-.container .carousel-field .carousel .slot:nth-child(4) {
+.slot:nth-child(4) {
     height: 500px;
 }
 
-.container .carousel-field .carousel .slot:nth-child(5) {
+.slot:nth-child(5) {
     height: 470px;
 }
 
-.container .carousel-field .carousel .slot:nth-child(6) {
+.slot:nth-child(6) {
     height: 440px;
 }
 
-.container .carousel-field .carousel .slot .info {
+.info {
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -85,14 +85,14 @@
     font-size: 12px;
 }
 
-.container .carousel-field .carousel .slot .image {
+.slot .image {
     background-color: var(--backgroundColor);
     height: 170px;
     width: 100%;
     border-radius: 10px;
 }
 
-.container .carousel-field .carousel .slot .image img {
+.slot .image img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
